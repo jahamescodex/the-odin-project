@@ -1,10 +1,84 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>CSS Intro</title>
   </head>
   <body>
+
+    <!-- Universal Selector-->
+    <div>
+      <h1>Hello World</h1>
+    </div>
+
+    <p>
+      This isn't affected by the CSS
+    </p>
+
+    <!-- elements can have mulitple classes-->
+    <div class="alert-text">
+      <p>Please agree to our terms of services.</p>
+    </div>
+
+    <!-- elements can have at most 1 ID-->
+    <div id="more-important">
+      <p>If you don't agree you go night night</p>
+    </div>
+
+    <div class="read">
+      <p>You have read this</p>
+    </div>
+
+    <div class="unread">
+      <p>You need to read this</p>
+    </div>
+
+    <!-- Example of multiple classes separated by spaces-->
+    <div class="subsection header">
+      <p>Newest Posts</p>
+    </div>
+
+    <div class="subsection preview">
+      <p>Where previews are gonna go</p>
+    </div>
+
+    <div class="subsection">
+      <p>Not affected by the chain selectors</p>
+    </div>
+
+    <div class="subsection" id="top-posts">
+      <p class="header-posts">Top Posts</p>
+      <div class="posts-style">
+        <ul>
+          <li>Crazy post #1</li>
+          <li>Crazy post #2</li>
+          <li>Crazy post #3</li>
+        </ul>
+      </div>
+      <div class="posts-style different">
+        <ul>
+          <li>Crazy post #4</li>
+          <li>Crazy post #5</li>
+          <li>Crazy post #6</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-box">
+      <h1>Helpful Properties</h1>
+      <p>
+        font-family: "font-family-name", "generic-family-name" <br>
+        font-size: #px <br>
+        font-weight: 1 to 1000 <br>
+        text-align: aligns horizontally (like center)
+      </p>
+      <h1>Image height and width</h1>
+      <p>
+        height: auto; <br>
+        width: 500px;
+      </p>
+    </div>
   </body>
 </html>
+

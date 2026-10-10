@@ -1,0 +1,85 @@
+/* the asterisk is the univeral selector (overrides everything)*/
+
+/*
+
+* {
+  color: black
+}
+
+*/
+
+/* Type Selectors */
+div {
+  color: purple;
+}
+
+/* Class Selectors */
+
+.alert-text {
+  color: red;
+}
+
+/* ID Selectors */
+#more-important{
+  background-color: black;
+  color: burlywood;
+}
+
+/* The grouping selector (just stack with comma)
+   if they share a property: value; */
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+/* Specific property: value*/
+.read {
+  border: 5px solid green;
+}
+.unread {
+  border: 5px solid red
+}
+
+/* Chaining selectors (picking specific if multiple)
+   Picks elements that has both of those selectors only (more specific thus will override)*/
+.subsection.header{
+  color: black;
+}
+
+.subsection.preview {
+  color: mediumspringgreen;
+}
+
+/* Specifically picks the elements with
+   subsection class but specific ones like
+   the chaining slector or ID will override
+   this. That's how the subsections above
+   aren't indianred*/
+.subsection {
+  color: indianred;
+}
+
+/* You can also chain classes and id*/
+.subsection#top-posts{
+  background: black;
+  color: white;
+}
+
+.header-posts{
+  color: yellow;
+}
+
+/* Descendant combinator
+   ancestor.child, no limit, but be idiomatic
+   maybe limit to 2 or 3*/
+.posts-style{
+  color: red;
+}
+
+.posts-style.different {
+  color: white;
+}
+
+
+
