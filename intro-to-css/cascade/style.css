@@ -1,0 +1,35 @@
+/* Rule 2 wins becayse is more specific */
+.subsection {
+  color: blue;
+}
+
+.main .list{
+  color: red;
+}
+
+#subsection {
+  background-color: yellow;
+  color: blue;
+}
+
+.main #subsection {
+  color: red;
+}
+
+#test {
+  background: black;
+  color: lightblue;
+  text-align: center;
+}
+
+.one.two.three{
+  color: white;
+}
+
+#test .one.two{
+  color: green;
+}
+
+#test .one.three{
+  color: white;
+}
